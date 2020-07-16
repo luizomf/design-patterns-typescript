@@ -1,0 +1,10 @@
+{
+  "window.zoomLevel": 2,
+  "code-runner.executorMap": {
+    "typescript": "clear && npx ts-node --files --transpile-only",
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll": true
+  }
+}
