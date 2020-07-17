@@ -2,9 +2,11 @@
   "window.zoomLevel": 2,
   "code-runner.executorMap": {
     "typescript": "clear && npx ts-node --files --transpile-only",
+    "python": "clear && venv/bin/python"
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true,
     "source.fixAll": true
-  }
+  },
+  "python.pythonPath": "venv/bin/python"
 }
