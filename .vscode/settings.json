@@ -8,5 +8,6 @@
     "source.fixAll.eslint": true,
     "source.fixAll": true
   },
-  "python.pythonPath": "venv/bin/python"
+  "python.pythonPath": "venv/bin/python",
+  "cSpell.enabled": true
 }
