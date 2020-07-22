@@ -1,5 +1,5 @@
 {
-  "window.zoomLevel": 0,
+  "window.zoomLevel": 2,
   "code-runner.executorMap": {
     "typescript": "clear && npx ts-node --files --transpile-only",
     "python": "clear && venv/bin/python"
