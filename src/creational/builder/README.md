@@ -19,7 +19,7 @@ A intenção acima significa que:
 Além disso, o padrão também:
 
 - Permite a criação de um objeto em etapas
-- Permite method chaining
+- Permite method chaining (encadeamento de métodos)
 - Permite que o objeto final varie em dados e tipo
 
 ---
