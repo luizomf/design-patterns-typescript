@@ -6,7 +6,7 @@ https://www.youtube.com/watch?v=MqddY6Ochkc&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3
 
 Por favor, acompanhe os vídeos para maior entendimento.  
 
-As pastas estão organizadas com as categorias dos padrões de projeto segundo o livro da GoF. São elas, behavioural, creational e structural.
+As pastas estão organizadas com as categorias dos padrões de projeto segundo o livro da GoF. São elas, behavioural (comportamentais), creational (criacionais) e structural (estruturais).
 
 Cada pasta contém um README detalhando a categoria em si e os padrões de projeto nela presentes.
 
