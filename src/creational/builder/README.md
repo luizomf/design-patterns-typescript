@@ -1,4 +1,4 @@
-# Builder
+# Builder - Creational (Criação)
 
 ## Intenção
 

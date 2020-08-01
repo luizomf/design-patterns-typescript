@@ -1,4 +1,4 @@
-# Factory Method
+# Factory Method - Creational (Criação)
 
 ## Intenção
 

@@ -1,4 +1,4 @@
-# Singleton
+# Singleton - Creational (Criação)
 
 ## Intenção
 
