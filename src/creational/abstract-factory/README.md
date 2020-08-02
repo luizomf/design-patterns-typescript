@@ -37,19 +37,21 @@ Use o padrão Abstract Factory quando:
 
 ## Implementação - Teoria
 
-Observação importante: objetos criados por um fábricas tendem a ser chamados de "Product" (produto)
+Observação importante: objetos criados por um fábricas tendem a ser chamados de "Product" (produto). Veja os diagramas na pasta "diagramas" para melhor entendimento.
 
-1. **Crie uma interface em comum para todas as factories concretas:** essa interface define métodos que retornam famílias de produtos diferentes em um nível mais abstrato. Esses produtos podem colaborar entre si caso necessário.
-2. **Crie fábricas concretas:** essas fábricas implementam os métodos da fábrica abstrata e retornam os produtos concretos. A assinatura dos métodos nas fábricas concretas retornam a mesma família da fábrica abstrata, porém o retorno são produtos concretos que implementam essa interface. 
-3. **Crie interfaces correspondentes para cada família de produto:** essas interfaces definem os tipos dos objetos a serem retornados pela fábrica abstrata e fábricas concretas.
-4. **Crie os produtos concretos:** crie os produtos concretos que implementam as interfaces de produtos. Note que produtos de interfaces diferentes podem colaborar entre si.
+1. **Crie uma interface em comum para todas as factories concretas:** essa interface define métodos que retornam famílias de produtos diferentes em um nível mais abstrato. Esses produtos podem colaborar entre si caso necessário. Esses métodos devem ser implementados por todas as fábricas concretas.
+2. **Crie fábricas concretas:** essas fábricas implementam os métodos da fábrica abstrata e retornam os produtos concretos. A assinatura dos métodos nas fábricas concretas retornam a mesma família da fábrica abstrata, porém o retorno são produtos concretos que implementam a interface da família de produtos retornados pela fábrica abstrata. 
+3. **Crie interfaces correspondentes para cada família de produto:** essas interfaces definem os tipos dos objetos a serem retornados pela fábrica abstrata. Essas interfaces são os retornos dos métodos fábrica na fábrica abstrata.
+4. **Crie os produtos concretos:** crie os produtos concretos que implementam as interfaces de produtos. Note que produtos de interfaces diferentes podem colaborar entre si por composição. Esses produtos são os retornos dos métodos fábrica nas fábricas concretas.
 
 ## Consequências
 
 O que é bom ou ruim no Abstract Factory:
 
 **Bom:**
-- working
+- Os produtos sempre serão compatíveis entre si
+- Aplicação clara do Open/Closed Principle, é fácil adicionar novas fábricas e produtos
+- Aplicação clara do Single Responsibility Principle, o código que cria está separado do código que usa os objetos
 
 **Ruim:**
-- working
+- Muitas classes e maior complexidade será introduzida no código
