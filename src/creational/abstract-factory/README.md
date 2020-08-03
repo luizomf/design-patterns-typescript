@@ -10,15 +10,52 @@
 
 O Abstract Factory é usado para garantir que uma família de produtos relacionados ou dependentes trabalhem sempre juntos (*veja aplicabilidade para mais casos de uso*).  
 
-Por exemplo, imagine que está criando um sistema de interfaces gráficas que deva funcionar em Linux, Windows e Mac. É natural termos várias classes representando elementos como Janela, Botão, Input e assim por diante. Também é natural usarmos composição entre os elementos, já que um botão pode estar dentro de uma janela ou formulário. Além disso, os sistemas operacionais também precisam de implementações diferentes das classes de interface gráfica.  
+Por exemplo: imagine que está criando um sistema de interfaces gráficas que deva funcionar em Linux, Windows e Mac. É natural termos várias classes representando elementos como Janela, Botão, Input e assim por diante. Também é natural usarmos composição entre os elementos, já que um botão pode estar dentro de uma janela ou formulário (não é um requisito para o padrão, mas pode acontecer). Além disso, os sistemas operacionais também precisam de implementações diferentes das classes de interface gráfica.  
 
-Nesse caso, temos uma separação de famílias de objetos. Exemplo:
+Nesse caso teríamos famílias de classes de elementos gráficos separadas por grupos de sistemas operacionais (Windows, Linux, Mac, e assim por diante). Deixe-me especificar isso usando nomes de classes e talvez você entenda melhor meu ponto de vista:
 
-- UIWindows, ButtonWindows, InputWindows, etc...
-- UILinux, ButtonLinux, InputLinux, etc...
-- UIMac, ButtonMac, InputMac, etc...
+- Nomes de classes para Windows: 
+  - UIWindows
+  - ButtonWindows
+  - InputWindows
+  - ...
+- Nomes de classes para Linux: 
+  - UILinux
+  - ButtonLinux
+  - InputLinux
+  - ...
+- Nomes de classes para Mac: 
+  - UIMac
+  - ButtonMac
+  - InputMac
+  - ...
 
 O Abstract Factory ajuda a garantir que classes de mesma família trabalhem sempre juntas. Você não quer que classes `ButtonWindows` se misturem com `UILinux`, não é? Por isso focamos em família de objetos relacionados ou dependentes.
+
+No meu exemplo, poderíamos ter uma fábrica abstrata (`UIFactory`) com os métodos abstratos `createUI`, `createButton` e `createInput`. Agora podemos implementar fábricas concretas que estendem `UIFactory` e implementam esses métodos, seriam elas: `UIWindowsFactory`, `UILinuxFactory` e `UIMacFactory`. Cada fábrica concreta fica responsável pode retornar objetos da sua própria família.
+
+Imagine essa hierarquia descrita assim (se preferir diagramas, veja a pasta diagramas):
+
+- `UIFactory` (fábrica abstrata)
+  - `UIWindowsFactory` (fábrica concreta): 
+    - `createUI(): UI` -> `UIWindows`
+    - `createButton(): Button` -> `ButtonWindows`
+    - `createInput(): Input` -> `InputWindows`
+    - ...
+  - `UILinuxFactory` (fábrica concreta): 
+    - `createUI(): UI` -> `UILinux`
+    - `createButton(): Button` -> `ButtonLinux`
+    - `createInput(): Input` -> `InputLinux`
+    - ...
+  - `UIMacFactory` (fábrica concreta): 
+    - `createUI(): UI` -> `UIMac`
+    - `createButton(): Button` -> `ButtonMac`
+    - `createInput(): Input` -> `InputMac`
+    - ...
+
+A única coisa que também precisamos, mas que eu não mencionei até aqui é uma interface em comum para todos os produtos finais. Todos os produtos devem seguir a mesma interface. 
+
+No meu exemplo as interfaces de produtos seriam: `UI`, `Button` e `Input` (mencionei isso com *`: Interface`* logo após a assinatura dos métodos no exemplo acima).
 
 ---
 
