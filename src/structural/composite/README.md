@@ -2,7 +2,7 @@
 
 ## Intenção
 
-*Compor objetos em estruturas de árvore para representarem hierarquias partes/todo. Composite permite aos cliente tratarem de maneira uniforme objetos individuais e composições de objetos.*
+*Compor objetos em estruturas de árvore para representarem hierarquias partes/todo. Composite permite aos clientes tratarem de maneira uniforme objetos individuais e composições de objetos.*
 
 *Observação:* **partes** são objetos que formam a estrutura (as partes da estrutura); **todo** é a estrutura inteira que é formada por várias partes.
 
