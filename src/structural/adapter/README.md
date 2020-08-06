@@ -8,13 +8,13 @@
 
 ## Sobre o Adapter
 
-O `Adapter` é um padrão de projeto muito usado para adaptar interfaces de código de terceiros (como frameworks ou libs) ou código legado (antigo) para o nosso código. Com ele é possível não depender diretamente de código que não está no domínio da nossa aplicação.
+O `Adapter` é um padrão de projeto muito usado para adaptar interfaces de código de terceiros (como frameworks ou libs) ou código legado (antigo) para o nosso código atual. Com ele é possível não depender diretamente de código que não está no domínio da nossa aplicação.
 
 Atualmente usamos muitos frameworks ou libs externas para tarefas simples, como validação de dados, logging, ORM e assim por diante. Geralmente usamos esses códigos diretamente na nossa aplicação, o que faz o nosso código depender de código externo.
 
-Um código que depende de algo externo parece inofensivo, porém se isso ocorrer em muitos locais da minha aplicação e por algum motivo eu precisar trocar de biblioteca, agora eu terei um problema em mãos. Testes precisarão ser refeitos, partes que não deveriam quebrar com alterações quebram, enfim, vários problemas começarão a ocorrer.
+Um código que depende de algo externo parece inofensivo, porém se isso ocorrer em muitos locais da minha aplicação e, por algum motivo, eu precisar trocar de biblioteca, agora eu terei um problema em mãos. Testes precisarão ser refeitos, partes que não deveriam quebrar com alterações quebram... Enfim, vários problemas poderão ocorrer.
 
-O padrão `Adapter` ajuda a resolver este problema (dentro vários outros) adicionando um adaptador sob meu domínio dentro da aplicação. A função do objeto `Adapter` é adaptar chamadas de dentro da minha aplicação para o framework ou lib externos.
+O padrão `Adapter` ajuda a resolver este problema (dentre vários outros) adicionando um adaptador sob meu domínio dentro na aplicação. A função do objeto `Adapter` é adaptar chamadas de dentro da minha aplicação para o framework ou lib externos.
 
 Isso também pode ser usado para outros fins, como adaptar código legado, adicionar funcionalidades a classes ou fazer qualquer tipo de adaptação necessária para sua aplicação.
 
