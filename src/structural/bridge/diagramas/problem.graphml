@@ -1,0 +1,1478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!--Created by yFiles for HTML 2.3.0.1-->
+<graphml xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://www.yworks.com/xml/schema/graphml.html/2.0/ygraphml.xsd " xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:demostyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoStyle/1.0" xmlns:icon-style="http://www.yworks.com/yed-live/icon-style/1.0" xmlns:bpmn="http://www.yworks.com/xml/yfiles-bpmn/2.0" xmlns:demotablestyle="http://www.yworks.com/yFilesHTML/demos/FlatDemoTableStyle/1.0" xmlns:uml="http://www.yworks.com/yFilesHTML/demos/UMLDemoStyle/1.0" xmlns:compat="http://www.yworks.com/xml/yfiles-compat-arrows/1.0" xmlns:GraphvizNodeStyle="http://www.yworks.com/yFilesHTML/graphviz-node-style/1.0" xmlns:VuejsNodeStyle="http://www.yworks.com/demos/yfiles-vuejs-node-style/1.0" xmlns:y="http://www.yworks.com/xml/yfiles-common/3.0" xmlns:x="http://www.yworks.com/xml/yfiles-common/markup/3.0" xmlns:sys="http://www.yworks.com/xml/yfiles-common/markup/primitives/2.0" xmlns:yjs="http://www.yworks.com/xml/yfiles-for-html/2.0/xaml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<key id="d0" for="node" attr.type="int" attr.name="zOrder" y:attr.uri="http://www.yworks.com/xml/yfiles-z-order/1.0/zOrder"/>
+	<key id="d1" for="node" attr.type="boolean" attr.name="Expanded" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/Expanded">
+		<default>true</default>
+	</key>
+	<key id="d2" for="node" attr.type="string" attr.name="url"/>
+	<key id="d3" for="node" attr.type="string" attr.name="description"/>
+	<key id="d4" for="node" attr.name="NodeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeLabels"/>
+	<key id="d5" for="node" attr.name="NodeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeGeometry"/>
+	<key id="d6" for="all" attr.name="UserTags" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/UserTags"/>
+	<key id="d7" for="node" attr.name="NodeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/NodeStyle"/>
+	<key id="d8" for="node" attr.name="NodeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/NodeViewState"/>
+	<key id="d9" for="edge" attr.type="string" attr.name="url"/>
+	<key id="d10" for="edge" attr.type="string" attr.name="description"/>
+	<key id="d11" for="edge" attr.name="EdgeLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeLabels"/>
+	<key id="d12" for="edge" attr.name="EdgeGeometry" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeGeometry"/>
+	<key id="d13" for="edge" attr.name="EdgeStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/EdgeStyle"/>
+	<key id="d14" for="edge" attr.name="EdgeViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/EdgeViewState"/>
+	<key id="d15" for="port" attr.name="PortLabels" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLabels"/>
+	<key id="d16" for="port" attr.name="PortLocationParameter" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortLocationParameter">
+		<default>
+			<x:Static Member="y:FreeNodePortLocationModel.NodeCenterAnchored"/>
+		</default>
+	</key>
+	<key id="d17" for="port" attr.name="PortStyle" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/PortStyle">
+		<default>
+			<x:Static Member="y:VoidPortStyle.Instance"/>
+		</default>
+	</key>
+	<key id="d18" for="port" attr.name="PortViewState" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/folding/1.1/PortViewState"/>
+	<key id="d19" attr.name="SharedData" y:attr.uri="http://www.yworks.com/xml/yfiles-common/2.0/SharedData"/>
+	<data key="d19">
+		<y:SharedData>
+			<yjs:SolidColorFill x:Key="1" color="#FF607D8B"/>
+			<yjs:SolidColorFill x:Key="2" color="#FFA3F1BB"/>
+			<yjs:SolidColorFill x:Key="3" color="#FFFF5722"/>
+			<yjs:SolidColorFill x:Key="4" color="#FFA3F1BB"/>
+			<y:FreeNodePortLocationModelParameter x:Key="5" Ratio="0.5,0.010638297872340441"/>
+			<y:FreeNodePortLocationModelParameter x:Key="6" Ratio="0.5,0.010638297872340441"/>
+			<y:FreeNodePortLocationModelParameter x:Key="7" Ratio="0.5,0.010638297872340441"/>
+			<yjs:SolidColorFill x:Key="8" color="#FFFF5722"/>
+			<yjs:SolidColorFill x:Key="9" color="#FFA3F1BB"/>
+			<y:FreeNodePortLocationModelParameter x:Key="10" Ratio="0.5,0.010638297872340441"/>
+			<y:FreeNodePortLocationModelParameter x:Key="11" Ratio="0.5,0.010638297872340441"/>
+			<y:FreeNodePortLocationModelParameter x:Key="12" Ratio="0.5,0.010638297872340441"/>
+			<y:FreeNodePortLocationModelParameter x:Key="13" Ratio="0.5,0.010638297872340441"/>
+			<y:FreeNodePortLocationModelParameter x:Key="14" Ratio="0.5,0.010638297872340441"/>
+			<yjs:Stroke x:Key="15" fill="#FF000000"/>
+			<yjs:PolylineEdgeStyle x:Key="16" stroke="{y:GraphMLReference 15}">
+				<yjs:PolylineEdgeStyle.sourceArrow>
+					<yjs:Arrow type="TRIANGLE" stroke="{y:GraphMLReference 15}" fill="#FFFFFFFF"/>
+				</yjs:PolylineEdgeStyle.sourceArrow>
+			</yjs:PolylineEdgeStyle>
+		</y:SharedData>
+	</data>
+	<graph id="G" edgedefault="directed">
+		<data key="d6">
+			<y:Json>{"version":"2.0.0","bridge-style":"GAP","theme":{"name":"light","version":"1.0.0"}}</y:Json>
+		</data>
+		<node id="n0">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-151.25" Y="-1066" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 3}" highlightFill="{y:GraphMLReference 4}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="RemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+		</node>
+		<node id="n1">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-271.25" Y="-899.75" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.010638297872340441"/>
+				</data>
+			</port>
+		</node>
+		<node id="n2">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-31.25" Y="-899.75" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.010638297872340441"/>
+				</data>
+			</port>
+		</node>
+		<node id="n3">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="538.75" Y="-1066" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 3}" highlightFill="{y:GraphMLReference 4}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="RemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+		</node>
+		<node id="n4">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="298.75" Y="-899.75" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n5">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="538.75" Y="-899.75" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+		</node>
+		<node id="n6">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="778.75" Y="-899.75" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="PanasonicRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+		</node>
+		<node id="n7">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-151.25" Y="-692.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 3}" highlightFill="{y:GraphMLReference 4}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="RemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+		</node>
+		<node id="n8">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-391.25" Y="-526" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n9">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-151.25" Y="-526" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+		</node>
+		<node id="n10">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="88.75" Y="-526" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Panasonic" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+		</node>
+		<node id="n11">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="328.75" Y="-526" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 8}" highlightFill="{y:GraphMLReference 9}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="TouchRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="10"/>
+				</data>
+			</port>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+		</node>
+		<node id="n12">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="88.75" Y="-376" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+		</node>
+		<node id="n13">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="328.75" Y="-376" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+			</port>
+		</node>
+		<node id="n14">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="568.75" Y="-376" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="PanasonicTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+		</node>
+		<node id="n15">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-181.25" Y="-166" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 3}" highlightFill="{y:GraphMLReference 4}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="RemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+		</node>
+		<node id="n16">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-421.25" Y="0.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n17">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-181.25" Y="0.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+		</node>
+		<node id="n18">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="58.75" Y="0.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Panasonic" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+		</node>
+		<node id="n19">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="298.75" Y="0.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 8}" highlightFill="{y:GraphMLReference 9}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="TouchRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="10"/>
+				</data>
+			</port>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
+		</node>
+		<node id="n20">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="58.75" Y="150.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+		</node>
+		<node id="n21">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="298.75" Y="150.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+			</port>
+		</node>
+		<node id="n22">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="538.75" Y="150.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="PanasonicTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+		</node>
+		<node id="n23">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-181.25" Y="148.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 8}" highlightFill="{y:GraphMLReference 9}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="WifiTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+			</port>
+		</node>
+		<node id="n24">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-421.25" Y="298.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+		</node>
+		<node id="n25">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-181.25" Y="298.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+			</port>
+		</node>
+		<node id="n26">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="58.75" Y="298.25" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="PanasonicTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+		</node>
+		<node id="n27">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-181.25" Y="479.75" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 3}" highlightFill="{y:GraphMLReference 4}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="RemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
+		</node>
+		<node id="n28">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-421.25" Y="646" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="5"/>
+				</data>
+			</port>
+		</node>
+		<node id="n29">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-181.25" Y="646" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="6"/>
+				</data>
+			</port>
+		</node>
+		<node id="n30">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="58.75" Y="646" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="Panasonic" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="7"/>
+				</data>
+			</port>
+		</node>
+		<node id="n31">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="298.75" Y="646" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 8}" highlightFill="{y:GraphMLReference 9}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="TouchRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="10"/>
+				</data>
+			</port>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3"/>
+			<port name="p4"/>
+			<port name="p5"/>
+		</node>
+		<node id="n32">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="58.75" Y="796" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+		</node>
+		<node id="n33">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="298.75" Y="796" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+			</port>
+		</node>
+		<node id="n34">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="538.75" Y="796" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="PanasonicTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+		</node>
+		<node id="n35">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-181.25" Y="794" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 8}" highlightFill="{y:GraphMLReference 9}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="abstract" className="WifiTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0"/>
+			<port name="p1"/>
+			<port name="p2"/>
+			<port name="p3">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="14"/>
+				</data>
+			</port>
+			<port name="p4"/>
+		</node>
+		<node id="n36">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-421.25" Y="944" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SamsungTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="11"/>
+				</data>
+			</port>
+		</node>
+		<node id="n37">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-181.25" Y="944" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="SonyTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="12"/>
+				</data>
+			</port>
+		</node>
+		<node id="n38">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="58.75" Y="944" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="PanasonicTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:GraphMLReference ResourceKey="13"/>
+				</data>
+			</port>
+		</node>
+		<node id="n39">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-661.25" Y="644" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="LGRemoteControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.010638297872340441"/>
+				</data>
+			</port>
+		</node>
+		<node id="n40">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-421.25" Y="794" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="LGTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.010638297872340441"/>
+				</data>
+			</port>
+		</node>
+		<node id="n41">
+			<data key="d0">0</data>
+			<data key="d5">
+				<y:RectD X="-661.25" Y="944" Width="182.5" Height="92"/>
+			</data>
+			<data key="d7">
+				<uml:UMLNodeStyle fill="{y:GraphMLReference 1}" highlightFill="{y:GraphMLReference 2}">
+					<uml:UMLNodeStyle.model>
+						<uml:UMLClassModel stereotype="" constraint="" className="LGTouchControl" attributesOpen="false" operationsOpen="false">
+							<uml:UMLClassModel.attributes>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.attributes>
+							<uml:UMLClassModel.operations>
+								<x:Array Type="sys:Object"/>
+							</uml:UMLClassModel.operations>
+						</uml:UMLClassModel>
+					</uml:UMLNodeStyle.model>
+				</uml:UMLNodeStyle>
+			</data>
+			<port name="p0">
+				<data key="d16">
+					<y:FreeNodePortLocationModelParameter Ratio="0.5,0.010638297872340441"/>
+				</data>
+			</port>
+		</node>
+		<edge id="e0" source="n0" target="n1" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-60,-930"/>
+					<y:Bend Location="-180,-930"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e1" source="n0" target="n2" sourceport="p1" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-60,-930"/>
+					<y:Bend Location="60,-930"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e2" source="n3" target="n4" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="630,-942"/>
+					<y:Bend Location="390,-942"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e3" source="n3" target="n6" sourceport="p1" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="630,-942"/>
+					<y:Bend Location="870,-942"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e4" source="n3" target="n5" sourceport="p2" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e5" source="n7" target="n8" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-60,-568.25"/>
+					<y:Bend Location="-300,-568.25"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e6" source="n7" target="n10" sourceport="p1" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-60,-568.25"/>
+					<y:Bend Location="180,-568.25"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e7" source="n7" target="n9" sourceport="p2" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e8" source="n7" target="n11" sourceport="p3" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-60,-570"/>
+					<y:Bend Location="420,-570"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e9" source="n11" target="n13" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e10" source="n11" target="n12" sourceport="p2" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="420,-404.25"/>
+					<y:Bend Location="180,-404.25"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e11" source="n11" target="n14" sourceport="p3" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="420,-404.25"/>
+					<y:Bend Location="660,-404.25"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e12" source="n15" target="n16" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,-42"/>
+					<y:Bend Location="-330,-42"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e13" source="n15" target="n18" sourceport="p1" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,-42"/>
+					<y:Bend Location="150,-42"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e14" source="n15" target="n17" sourceport="p2" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e15" source="n15" target="n19" sourceport="p3" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,-43.75"/>
+					<y:Bend Location="390,-43.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e16" source="n19" target="n21" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e17" source="n19" target="n20" sourceport="p2" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="390,122"/>
+					<y:Bend Location="150,122"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e18" source="n19" target="n22" sourceport="p3" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="390,122"/>
+					<y:Bend Location="630,122"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e19" source="n23" target="n25" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e20" source="n23" target="n24" sourceport="p1" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,270"/>
+					<y:Bend Location="-330,270"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e21" source="n23" target="n26" sourceport="p2" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,270"/>
+					<y:Bend Location="150,270"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e22" source="n19" target="n23" sourceport="p4" targetport="p3">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="390,120"/>
+					<y:Bend Location="-90,120"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e23" source="n27" target="n28" sourceport="p0" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,603.75"/>
+					<y:Bend Location="-330,603.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e24" source="n27" target="n30" sourceport="p1" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,603.75"/>
+					<y:Bend Location="150,603.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e25" source="n27" target="n29" sourceport="p2" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e26" source="n27" target="n31" sourceport="p3" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,602"/>
+					<y:Bend Location="390,602"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e27" source="n31" target="n33" sourceport="p1" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e28" source="n31" target="n32" sourceport="p2" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="390,767.75"/>
+					<y:Bend Location="150,767.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e29" source="n31" target="n34" sourceport="p3" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="390,767.75"/>
+					<y:Bend Location="630,767.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e30" source="n35" target="n37" sourceport="p0" targetport="p0">
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e31" source="n35" target="n36" sourceport="p1" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,915.75"/>
+					<y:Bend Location="-330,915.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e32" source="n35" target="n38" sourceport="p2" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,915.75"/>
+					<y:Bend Location="150,915.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e33" source="n31" target="n35" sourceport="p4" targetport="p3">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="390,765.75"/>
+					<y:Bend Location="-90,765.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e34" source="n27" target="n39" sourceport="p4" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,600"/>
+					<y:Bend Location="-570,600"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e35" source="n31" target="n40" sourceport="p5" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="390,765.75"/>
+					<y:Bend Location="-330,765.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+		<edge id="e36" source="n35" target="n41" sourceport="p4" targetport="p0">
+			<data key="d12">
+				<x:List>
+					<y:Bend Location="-90,915.75"/>
+					<y:Bend Location="-570,915.75"/>
+				</x:List>
+			</data>
+			<data key="d13">
+				<y:GraphMLReference ResourceKey="16"/>
+			</data>
+		</edge>
+	</graph>
+</graphml>
