@@ -1,5 +1,5 @@
 import { RemoteControl } from './remote-control/remote-control';
-import { RemoteControWithVolume as RemoteControlWithVolume } from './remote-control/remote-control-with-volume';
+import { RemoteControlWithVolume } from './remote-control/remote-control-with-volume';
 import { Tv } from './device/tv';
 import { Radio } from './device/radio';
 
