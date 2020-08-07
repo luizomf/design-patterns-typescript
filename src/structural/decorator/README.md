@@ -8,6 +8,8 @@
 
 ## Sobre o Decorator
 
+Em vídeo: https://www.youtube.com/watch?v=p3Dh7VjxudE&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=20
+
 O Decorator é uma padrão de projeto usado para adicionar funcionalidades a objetos já criados, ou seja, sem a necessidade de alterar nenhum código. Isso faz com que este padrão aplique naturalmente o princípio do aberto/fechado (classes devem estar abertas para extensão, mas fechadas para modificação).
 
 ---
