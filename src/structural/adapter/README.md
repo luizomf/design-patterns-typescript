@@ -8,6 +8,8 @@
 
 ## Sobre o Adapter
 
+Em vídeo: https://www.youtube.com/watch?v=Y69BsV9-23M&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=16
+
 O `Adapter` é um padrão de projeto muito usado para adaptar interfaces de código de terceiros (como frameworks ou libs) ou código legado (antigo) para o nosso código atual. Com ele é possível não depender diretamente de código que não está no domínio da nossa aplicação.
 
 Atualmente usamos muitos frameworks ou libs externas para tarefas simples, como validação de dados, logging, ORM e assim por diante. Geralmente usamos esses códigos diretamente na nossa aplicação, o que faz o nosso código depender de código externo.

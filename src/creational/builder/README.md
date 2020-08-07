@@ -8,6 +8,8 @@
 
 ## Destilando a intenção
 
+Em vídeo: https://www.youtube.com/watch?v=2VwLvwsIu-8&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=6
+
 A intenção acima significa que:
 
 * O padrão sugere a separação do código que cria e o código que usa o objeto

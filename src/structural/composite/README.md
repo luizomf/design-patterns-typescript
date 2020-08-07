@@ -10,6 +10,8 @@
 
 ## Sobre o Composite
 
+Em vídeo: https://www.youtube.com/watch?v=I0RqHDFQjVY&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=14
+
 O composite é um padrão de projeto que permite ao cliente tratar um único objeto ou uma estrutura formada de vários objetos aninhados hierarquicamente da mesma maneira.
 
 Na vida real lidamos com o padrão composite o tempo todo. Por exemplo, pense em produtos que podem ser comprados por unidade ou em caixas (como leite, cerveja, refrigerante e outros). Você pode ir ao supermercado e comprar um único produto. Ele vai contar com um código de barras. No entanto, você também pode comprar uma caixa do mesmo produto. Ela também vai contar com um código de barras da mesma maneira.
