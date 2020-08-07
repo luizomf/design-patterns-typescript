@@ -4,17 +4,19 @@
 
 *Bridge é um padrão de projeto estrutural que tem a intenção de desacoplar uma abstração da sua implementação, de modo que as duas possam variar e evoluir independentemente.*
 
-*Observação:* **abstração** é um código de alto nível que geralmente delega tarefas para sua implementação; **implementação** é o código de baixo nível que realmente faz o trabalho.
+*Observação:* **abstração** é um código de alto nível que geralmente delega tarefas para sua implementação; **implementação** é o código de baixo nível que realmente faz o trabalho (o código para o qual a abstração delega tarefas).
 
 ---
 
 ## Sobre o Bridge
 
-O bridge foca o trabalho em composição ao invés de herança, ou seja, ao invés de extender infinitamente minha estrutura de classes para todas as possíveis variantes, posso apenas manter uma referência para uma implementação dentro da minha abstração. Isso me permite encaminhar chamadas de métodos da abstração para a implementação em tempo de execução.
+Em vídeo: https://www.youtube.com/watch?v=-gsuMWLxAko&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=18
 
-O bridge é idêntico ao adapter, o que muda é apenas a intenção. Veja esse trecho do livro da GoF:
+O bridge foca o trabalho em composição, ou seja, ao invés de extender infinitamente minha estrutura de classes para todas as possíveis variantes por herança, posso apenas manter uma referência para uma implementação dentro da minha abstração. Isso me permite encaminhar chamadas de métodos da abstração para a implementação em tempo de execução.
 
-(GOF em PT-BR pág. 208) A diferença chave entre esses padrões está nas suas intenções… O padrão Adapter faz as coisas funcionarem APÓS elas terem sido projetadas; o Bridge as faz funcionar ANTES QUE existam...
+O bridge é idêntico ao adapter, o que muda é apenas sua intenção. Veja esse trecho do livro da GoF:
+
+(GOF em PT-BR pág. 208) A diferença chave entre esses padrões está nas suas intenções… O padrão Adapter faz as coisas funcionarem *APÓS* elas terem sido projetadas; o Bridge as faz funcionar *ANTES QUE* existam...
 
 ---
 
