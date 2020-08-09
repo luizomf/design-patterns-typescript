@@ -8,7 +8,7 @@
 
 ## Sobre o Proxy
 
-Em vídeo: [...ainda não criado]
+Em vídeo: https://www.youtube.com/watch?v=EsxPyICeBPs&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=23
 
 Proxy é um padrão de projeto muito similar a outros padrões que usam composição, como *Composite* e *Decorator*. Apesar disso, as intenções de todos esses padrões são diferentes. 
 
