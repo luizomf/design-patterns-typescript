@@ -16,7 +16,7 @@ O bridge foca o trabalho em composição, ou seja, ao invés de extender infinit
 
 O bridge é idêntico ao adapter, o que muda é apenas sua intenção. Veja esse trecho do livro da GoF:
 
-(GOF em PT-BR pág. 208) A diferença chave entre esses padrões está nas suas intenções… O padrão Adapter faz as coisas funcionarem *APÓS* elas terem sido projetadas; o Bridge as faz funcionar *ANTES QUE* existam...
+> (GOF em PT-BR pág. 208) A diferença chave entre esses padrões está nas suas intenções… O padrão Adapter faz as coisas funcionarem *APÓS* elas terem sido projetadas; o Bridge as faz funcionar *ANTES QUE* existam...
 
 ---
 

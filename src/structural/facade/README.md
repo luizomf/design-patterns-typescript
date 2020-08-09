@@ -8,7 +8,7 @@
 
 ## Sobre o Façade
 
-Em vídeo: [...ainda não criado]
+Em vídeo: https://www.youtube.com/watch?v=A7mNiaBACYs&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=22
 
 O Façade é o padrão mais simples de todos. Ele tem a intenção de facilitar a vida do código cliente ao criar um objeto de fachada para um sistema mais complexo.
 
