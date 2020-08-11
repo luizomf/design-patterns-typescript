@@ -10,7 +10,7 @@
 
 Em vídeo: [... em processo de criação]
 
-O Strategy é um padrão de projeto que visa separar o conceito de algorítmo da regra de negócio para permitir que vários algoritmos possam ser implementados sem a necessidade de alterar a regra de negócio ou outros algoritmos que já existam no sistema.
+O Strategy é um padrão de projeto que visa separar o conceito de algoritmo da regra de negócio para permitir que vários algoritmos possam ser implementados sem a necessidade de alterar a regra de negócio ou outros algoritmos que já existam no sistema.
 
 Veja um exemplo de um problema e a solução do strategy.
 
@@ -63,9 +63,9 @@ Além de não ser uma solução, continuamos quebrando o princípio da responsab
 
 ### Solução - Strategy
 
-O Strategy diz que devemos separar os algorítmos da classe do carrinho de compras. 
+O Strategy diz que devemos separar os algoritmos da classe do carrinho de compras. 
 
-Nesse caso, podemos gerar uma família de algorítmos que implementam a mesma interface e podem aplicar descontos diferentes da maneira que precisarmos.
+Nesse caso, podemos gerar uma família de algoritmos que implementam a mesma interface e podem aplicar descontos diferentes da maneira que precisarmos.
 
 Poderíamos, por exemplo, ter uma interface `DiscountStrategy` com o método `getDiscount` para garantir que todas as classes de desconto tenham o método `getDiscount`. 
 
