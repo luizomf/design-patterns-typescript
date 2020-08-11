@@ -2,7 +2,7 @@
 
 ## Intenção
 
-*Define uma família de algoritmos, encapsular cada um deles e fazê-los intercambiáveis. O strategy permite que o algoritmo varie independentemente dos clientes que o utilizam.*
+*Definir uma família de algoritmos, encapsular cada um deles e fazê-los intercambiáveis. O strategy permite que o algoritmo varie independentemente dos clientes que o utilizam.*
 
 ---
 
@@ -10,24 +10,107 @@
 
 Em vídeo: [... em processo de criação]
 
-O Strategy visa dividir um objeto em dois estados: o estado intrínseco e o estado extrínseco.
+O Strategy é um padrão de projeto que visa separar o conceito de algorítmo da regra de negócio para permitir que vários algoritmos possam ser implementados sem a necessidade de alterar a regra de negócio ou outros algoritmos que já existam no sistema.
 
-O estado **intrínseco** de um objeto é a parte que nunca muda ou muda poucas vezes dentro do sistema. Por exemplo, imagine um objeto de endereço de um cliente com os seguintes dados: rua, número, bairro, cidade, cep, complemento, etc... O estado intrínseco deste objeto seriam as coisas que podem se repetir de cliente para cliente. Pense comigo, se vários clientes são do mesmo bairro, sabemos que outros dados também não mudam, como cidade e cep. Esses são parte do estado intrínseco do objeto de endereço.
+Veja um exemplo de um problema e a solução do strategy.
 
-Por outro lado temos o estado **extrínseco**. Esse estado mantém dados que estão constantemente variando. No caso do endereço, o número, o complemento e os dados do cliente mudam para cada localização. Esses valores podem ser movidos para fora do objeto a fim de liberar a memória que podem consumir.
+### Problema
 
-**Observação:** este é um exemplo fictício apenas para facilitar seu entendimento. Você precisa analisar caso a caso.
+Imagine que você tem um e-commerce que implementa promoções esporadicamente para aumentar as vendas. 
 
-A solução que o Strategy entrega é bastante intuitiva: 
+As promoções podem variar de acordo com a época, com o preço total do carrinho de compras ou até com a quantidade de produtos adquiridos pelo cliente. Por exemplo: *compre 3 produtos e ganhe 10% de desconto*; *compre R$150 e ganhe 15% de desconto*; *compre 5 produtos da categoria X e ganhe outro*.
 
-- separe o estado do objeto em **intrínseco** e **extrínseco**
-- mantenha o estado **intrínseco** dentro do objeto de forma imutável (geralmente configurado uma vez pelo construtor), já que ele será compartilhado com outros objetos
-- quando necessário, receba o restante dos dados (o estado **extrínseco**) no método que precisar desses dados
-- para evitar a duplicação de objetos flyweight, usa-se uma fábrica que verifica se um flyweight precisa ser criado ou se foi criado anteriormente. Recomenda-se que o código cliente use somente a fábrica para criar novos flyweights ou obter flyweights já criados  
+Essa promoções podem gerar muitas condicionais dentro da regra de negócio do carrinho de compras ao obter o preço com desconto. Como, por exemplo:
 
-Apesar de intuitivo, isso gera bastante complexidade no sistema, por isso é necessário analisar com cuidado essa situação. Ao separar o estado de um objeto, precisaremos de uma forma de unir esses dados novamente no momento do uso. Segundo o livro da GoF, isso pode ser feito no contexto que o cliente estiver, ou seja, pode ser gerenciado pelo próprio código cliente da maneira que preferir.
+```typescript
+// - Carrinho precisa ter no mínimo 3 produtos
+// - De acordo com o valor total o desconto pode aumentar
+if (cart.quantity >= 3) {
+  if (cart.total >= 100 && cart.total < 200) {
+    cart.discount = 10; // 10%
+  } else if (cart.total >= 200 && cart.total < 300) {
+    cart.discount = 20; // 20%
+  } else if (cart.total >= 300) {
+    cart.discount = 30; // 30%
+  }
+}
+```
+Não há problemas nessa lógica enquanto houver apenas essa promoção. Porém, a partir do momento que a promoção muda ou que implementemos outras promoções que são aplicadas ao mesmo tempo, devemos alterar a classe do carrinho de compras. Isso quebra o princípio do Aberto/Fechado e o princípio da responsabilidade única. E tem mais, se quiséssemos guardar a promoção antiga para retorná-la posteriormente, eu penso que alguns programadores poderiam pensar em fazer algo assim:
 
-Além disso, eles também recomendam que você só use o padrão Strategy em uma condição bastante específica (veja Aplicabilidade)
+```typescript
+// SOLUÇÃO INGÊNUA (NUNCA FAÇA ISSO)
+// Vamos precisar dessa promoção posteriormente
+// Então vamos comentar o código antigo
+//
+// Promoção antiga
+// if (cart.quantity > 3) {
+//   if (cart.total >= 100 && cart.total < 200) {
+//     cart.discount = 10; // 10%
+//   } else if (cart.total >= 200 && cart.total < 300) {
+//     cart.discount = 20; // 20%
+//   } else if (cart.total >= 300) {
+//     cart.discount = 30; // 30%
+//   }
+// }
+
+// Nova promoção
+if (cart.total >= 150) {
+  cart.discount = 5; // 5%
+}
+```
+
+Além de não ser uma solução, continuamos quebrando o princípio da responsabilidade única e o princípio do aberto/fechado. Não bastasse isso, também estamos quebrando todos os testes que já foram criados anteriormente para a classe do carrinho de compras.
+
+### Solução - Strategy
+
+O Strategy diz que devemos separar os algorítmos da classe do carrinho de compras. 
+
+Nesse caso, podemos gerar uma família de algorítmos que implementam a mesma interface e podem aplicar descontos diferentes da maneira que precisarmos.
+
+Poderíamos, por exemplo, ter uma interface `DiscountStrategy` com o método `getDiscount` para garantir que todas as classes de desconto tenham o método `getDiscount`. 
+
+Agora podemos fazer com que o carrinho de compras tenha um campo para receber uma classe do tipo `DiscountStrategy`. Ao chamar o método para obter o valor total no carrinho de compras, ele não precisa fazer nenhuma lógica adicional, basta chamar a sua estratégia de desconto.
+
+Por exemplo:
+
+```typescript
+export class ShoppingCart {
+  private discount: DiscountStrategy = new DefaultDiscount();
+  
+  // ... Código omitido
+
+  getTotal(): number {
+    return this.discount.getDiscount(this);
+  }
+
+  // ... Código omitido
+}
+```
+
+Perceba que a classe do carrinho de compras não precisa fazer nenhuma lógica complexa sobre qual desconto aplicar, ela simplesmente delega a tarefa de aplicar desconto para outra classe que terá apenas um responsabilidade, aplicar um desconto.
+
+Melhor do que isso, agora você pode mudar de promoção quando quiser simplesmente configurando o campo `discount`, por exemplo:
+
+```typescript
+export class ShoppingCart {
+  private discount: DiscountStrategy = new DefaultDiscount();
+  
+  // ... Código omitido
+
+  getTotal(): number {
+    return this.discount.getDiscount(this);
+  }
+
+  setDiscount(discount: DiscountStrategy): void {
+    // Configura um outro desconto qualquer
+    this.discount = discount;
+  }
+
+  // ... Código omitido
+}
+```
+
+Para trocar de promoção de desconto, apenas crie uma nova classe com o algoritmo do novo desconto e configure o carrinho usando `setDiscount`.
 
 ---
 
@@ -37,13 +120,11 @@ Veja a pasta diagramas.
 
 ## Aplicabilidade
 
-Só use o Strategy quanto TODAS as condições a seguir forem verdadeiras:
+Use o Strategy quando:
 
-- uma aplicação utiliza uma grande quantidade de objetos;
-- os custos de armazenamento são altos por causa da grande quantidade de objetos;
-- a maioria dos estados de objetos podem se tornar extrínsecos;
-- muitos objetos podem ser substituídos por poucos objetos compartilhados;
-- a aplicação não depende da identidade dos objetos.
+- você tiver variantes de um mesmo algoritmo e precisa trocar esses algoritmos em tempo de execução;
+- você precisar isolar a regra de negócio do algoritmo que deve ser aplicado (aplicando o princípio da responsabilidade única)
+- você perceber que está usando condicionais apenas para trocar o resultado final de um algoritmo
 
 ## Implementação
 
@@ -54,8 +135,11 @@ Veja o código e os diagramas dessa pasta para entender como o Strategy é imple
 O que é bom ou ruim no Strategy:
 
 **Bom:**
-- economiza memória RAM
+- Troca herança por composição
+- Separa a regra de negócio de algoritmos complexos
+- Aplica os princípios do aberto/fechado e da responsabilidade única
 
 **Ruim:**
-- Pode gerar outros problemas de desempenho não relacionados com a RAM
-- Seu código vai se tornar muito complexo
+- Pode ser complexo criar toda uma hierarquia de classes para aplicar novos algoritmos
+- Você pode obter o mesmo resultado com funções caso a linguagem de programação permitir
+- O código cliente precisa conhecer as estratégias que vai usar
