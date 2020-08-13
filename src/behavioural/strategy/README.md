@@ -8,7 +8,7 @@
 
 ## Sobre o Strategy
 
-Em vídeo: [... em processo de criação]
+Em vídeo: https://www.youtube.com/watch?v=mUagTgSnriQ&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=27
 
 O Strategy é um padrão de projeto que visa separar o conceito de algoritmo da regra de negócio para permitir que vários algoritmos possam ser implementados sem a necessidade de alterar a regra de negócio ou outros algoritmos que já existam no sistema.
 
