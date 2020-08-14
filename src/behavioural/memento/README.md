@@ -8,7 +8,7 @@
 
 ## Sobre o Memento
 
-Em vídeo: ... em criação
+Em vídeo: https://www.youtube.com/watch?v=crmLq8_FtLc&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=31
 
 O Memento é um padrão de projeto que visa delegar a tarefa de salvar e restaurar o estado de um objeto para outro chamado de `Caretaker` (ou zelador). Isso seria algo bem simples de se fazer, porém precisamos tomar cuidado com o encapsulamento dos dados.
 
