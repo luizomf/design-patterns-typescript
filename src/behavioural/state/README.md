@@ -8,7 +8,7 @@
 
 ## Sobre o State
 
-Em vídeo: ... em criação
+Em vídeo: https://www.youtube.com/watch?v=tSTPS2oHDmw&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H&index=33
 
 O State é um padrão de projeto que permite que o estado de um objeto em contexto também possa ser representado como um objeto. Isso permite usarmos polimorfismo ao invés de condicionais para mudar o comportamento do objeto contexto baseando-se no seu estado atual.
 
