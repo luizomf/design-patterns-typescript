@@ -8,7 +8,7 @@
 
 ## Sobre o Mediator
 
-Em vídeo: ... em criação
+Em vídeo: https://www.youtube.com/watch?v=fb7NrdCo4Ko&list=PLbIBj8vQhvm0VY5YrMrafWaQY2EnJ3j8H
 
 O Mediator é um padrão de projeto muito simples. Basicamente ele sugere a criação de um objeto central que faz a mediação da comunicação entre outros objetos.
 
