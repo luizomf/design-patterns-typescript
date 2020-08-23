@@ -7,8 +7,8 @@ dataStructure.addItem('A', 'B', 'C', 'D', 'E', 'F');
 const [a, b] = dataStructure;
 console.log('ROUBADOS:', a, b);
 console.log('EXECUTEI VÁRIAS COISAS E DEPOIS USEI O ITERATOR');
-const [c, ...rest] = dataStructure;
-console.log(c, rest);
+const [c, d, ...rest] = dataStructure;
+console.log(c, d, rest);
 
 dataStructure.resetIterator();
 for (const data of dataStructure) {
