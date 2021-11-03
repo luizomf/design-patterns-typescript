@@ -22,6 +22,6 @@
     "typescript": "^4.0.2"
   },
   "dependencies": {
-    "validator": "^13.1.1"
+    "validator": "^13.7.0"
   }
 }
